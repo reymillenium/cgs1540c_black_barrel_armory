@@ -1,40 +1,5 @@
 USE `black_barrel_armory`;
 
-# Removing the tables before seeding, in case they already exist (not necessary)
-# DROP TABLE IF EXISTS product_images;
-# DROP TABLE IF EXISTS order_items;
-# DROP TABLE IF EXISTS orders;
-# DROP TABLE IF EXISTS cart_items;
-# DROP TABLE IF EXISTS saved_for_later_products;
-# DROP TABLE IF EXISTS desired_products;
-# DROP TABLE IF EXISTS products;
-# DROP TABLE IF EXISTS product_types;
-# DROP TABLE IF EXISTS product_categories;
-# DROP TABLE IF EXISTS payment_methods;
-# DROP TABLE IF EXISTS addresses;
-# DROP TABLE IF EXISTS customers;
-# DROP TABLE IF EXISTS ffl_dealers;
-# DROP TABLE IF EXISTS states;
-# DROP TABLE IF EXISTS countries;
-
-# Emptying the tables before a fresh seeding:
-# TRUNCATE TABLE product_images;
-# TRUNCATE TABLE order_items;
-# TRUNCATE TABLE orders;
-# TRUNCATE TABLE cart_items;
-# TRUNCATE TABLE saved_for_later_products;
-# TRUNCATE TABLE desired_products;
-# TRUNCATE TABLE products;
-# TRUNCATE TABLE product_types;
-# TRUNCATE TABLE product_categories;
-# TRUNCATE TABLE credit_cards;
-# TRUNCATE TABLE credit_card_types;
-# TRUNCATE TABLE addresses;
-# TRUNCATE TABLE customers;
-# TRUNCATE TABLE ffl_dealers;
-# TRUNCATE TABLE states;
-# TRUNCATE TABLE countries;
-
 # countries
 INSERT INTO `countries` (`id`, `name`, `code`, `created_at`, `updated_at`)
 VALUES (1, 'United States', 'USA', '1975-08-30 13:36:01', '1998-11-14 19:16:10');
